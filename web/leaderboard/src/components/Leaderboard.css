@@ -29,7 +29,7 @@
   justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 
 .leaderboard-title-row .leaderboard-title {
@@ -105,7 +105,8 @@
   font-size: 1.125rem;
   color: #718096;
   text-align: center;
-  margin-bottom: 32px;
+  margin: 0 auto 32px;
+  max-width: 640px;
   font-weight: 400;
 }
 
@@ -216,10 +217,17 @@
     justify-content: center;
   }
 
+  /* Three bucket options need to fit side by side on narrow screens */
   .benchmark-toggle-option {
-    padding: 8px 20px;
-    font-size: 14px;
-    min-width: 110px;
+    padding: 8px 12px;
+    font-size: 13px;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .benchmark-toggle-container {
+    width: 100%;
+    max-width: 360px;
   }
 }
 
