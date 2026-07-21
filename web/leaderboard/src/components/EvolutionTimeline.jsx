@@ -57,6 +57,7 @@ const MILESTONES = [
   },
   {
     name: 'τ-knowledge',
+    hoverNote: 'Appears on the leaderboard as τ³-Banking',
     date: 'March 2026',
     badge: 'τ³-bench',
     links: [
@@ -75,6 +76,7 @@ const MILESTONES = [
   },
   {
     name: 'τ-voice',
+    hoverNote: 'Appears on the leaderboard as τ³-Voice',
     date: 'March 2026',
     badge: 'τ³-bench',
     links: [
@@ -104,7 +106,7 @@ function EvolutionTimeline() {
             </div>
             <div className="evolution-content">
               <div className="evolution-header">
-                <span className="evolution-name">{m.name}</span>
+                <span className="evolution-name" title={m.hoverNote}>{m.name}</span>
                 {m.badge && <span className="evolution-badge">{m.badge}</span>}
                 <span className="evolution-date">{m.date}</span>
                 <span className="evolution-links">
